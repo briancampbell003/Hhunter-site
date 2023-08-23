@@ -43,41 +43,13 @@ h1 {
 .header {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: fit-content;
-    background-image: linear-gradient(to right, whitesmoke, var(--primary));
-    border-bottom: 2px solid whitesmoke;
+    background-color: antiquewhite;
+
+    border-bottom: 4px solid rgb(202, 7, 7);
     font-family: Georgia, Times, 'Times New Roman', serif;
-}
-.header a {
-    margin-top: 12px;
-    padding-left: 125px;
-    padding-right: 125px;
-    text-align: center;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--secondary);
-}
-.header a.active, .header a:hover {
-    font-style: italic;
-    color: black;
-}
-.nav a {
-    display: flex;
-    padding-left: 15px;
-    padding-right: 15px;
-    flex-flow: row nowrap;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    margin-right: 4vw;
-    margin-left: 4vw;
-    font-size: 18px;
-    color: var(--tertiary);
-}
-.nav a.active, .nav a:hover {
-    font-style: italic;
-    color: var(--secondary);
 }
 
 /* HOME PAGE */
@@ -91,13 +63,10 @@ h1 {
     border: var(--tertiary) double 5px;
 }
 
-.constr-img {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 15px;
-    opacity: .75;
-    border: var(--secondary) 1px solid;
-    border-radius: 10px;
+.social-embeds {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 /* ACCORDIONS */
