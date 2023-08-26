@@ -12,7 +12,7 @@ function Header({ currentPage, handlePageChange }) {
         <img className="logo" src={Logo} alt="hhunter logo" width="250" height="60"></img>
       </a>
       <div className="define-hunter">
-        <strong>hhunter:</strong> dj and producer
+        hhunter: dj and producer
       </div>
     </div>
   );

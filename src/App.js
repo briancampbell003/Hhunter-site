@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Nav from './components/Nav/Nav';
 import Home from './components/Home';
 import Shows from './components/pages/Shows';
 import Shop from './components/pages/Shop';
@@ -28,8 +28,8 @@ export default function App() {
   return (
     <div className="page-frame">
       < Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      < Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
-      < Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

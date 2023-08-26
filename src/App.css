@@ -4,9 +4,9 @@
 }
 
 :root {
-    --primary: rgb(239, 249, 219);
-    --secondary: #2e2e3e;
-    --tertiary: #618a8a;
+    --primary: rgb(251, 255, 242);
+    --secondary: #303044;
+    --tertiary: rgb(202, 7, 7);
     --error: rgb(228, 46, 1);
     --border-radius: 0.3rem;
 }
@@ -46,17 +46,43 @@ h1 {
     justify-content: center;
     align-items: center;
     height: fit-content;
-    background-color: antiquewhite;
-
-    border-bottom: 4px solid rgb(202, 7, 7);
+    background-color: var(--primary);
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(202, 7, 7);
     font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.define-hunter {
+    font-family: 'Anton', sans-serif;
+}
+
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+}
+
+.nav-item {
+    background-color: var(--primary);
+    margin: 10px;
+}
+
+.nav-item a {
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover, a.active {
+    color: var(--tertiary);
 }
 
 /* HOME PAGE */
 .home-page {
     display: flex;
     flex-direction: column;
-    margin: 30px 15% 40px;
+    margin: 0px 15% 0px;
     padding: 15px;
     color: var(--secondary);
     background-color: whitesmoke;
@@ -69,35 +95,11 @@ h1 {
     justify-content: space-evenly;
 }
 
-/* ACCORDIONS */
-.accordion {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 5px;
-}
-.accordion-item {
-    padding: 8px;
-    width: 90vw;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    border-radius: 10px;
-}
-.accordion-btn {
-    font-style: italic;
-    color: rgb(163, 163, 163);
-    margin-left: 38px;
-}
-.accordion-title {
-    margin: 4px;
-}
-.accordion-title  .isActive {
-    margin: 4px;
-    font-weight: bolder;
-}
-.accordion-content {
-    margin: 4px;
-}
+/* SHOWS */
+
+
+/* SHOP */
+
 
 /* FOOTER */
 .footer {
@@ -116,6 +118,11 @@ h1 {
     list-style-type: none;
 }
 
+
+
+
+
+/* MOBILE RESPONSIVE */
 
 @media screen and (max-width: 1100px) {
     .mhl-corner-logo {

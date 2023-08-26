@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer({ currentPage, handlePageChange }) {
+function Nav({ currentPage, handlePageChange }) {
     return (
         <ul className="nav">
             <li className="nav-item">
@@ -25,4 +25,4 @@ function Footer({ currentPage, handlePageChange }) {
     );
 }
 
-export default Footer;
+export default Nav;
